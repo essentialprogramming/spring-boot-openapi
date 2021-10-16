@@ -1,4 +1,4 @@
-##Sample project integrated with Spring boot and OpenAPI
+## Sample project integrated with Spring boot and OpenAPI
 
 ### Step 1 - Adding OpenAPI to our project
 
