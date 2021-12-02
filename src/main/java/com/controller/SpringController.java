@@ -6,6 +6,7 @@ import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -14,6 +15,7 @@ import javax.persistence.EntityNotFoundException;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
+@Tag(description = "User API", name = "User Services")
 @Controller
 public class SpringController {
 
@@ -40,7 +42,7 @@ public class SpringController {
     }
 
     @PostMapping("/users")
-    @Operation(summary = "Register a new user", tags = {"User",},
+    @Operation(summary = "Register a new user",
             responses = {
                     @ApiResponse(responseCode = "200",
                             description = "Returns the registered user",
@@ -54,7 +56,7 @@ public class SpringController {
     }
 
     @PutMapping("/users/{id}")
-    @Operation(summary = "Update a user's name", tags = {"User",},
+    @Operation(summary = "Update a user's name",
             responses = {
                     @ApiResponse(responseCode = "200",
                             description = "Returns the updated user",
@@ -67,7 +69,7 @@ public class SpringController {
     }
 
     @DeleteMapping("/users/{id}")
-    @Operation(summary = "Delete a user", tags = {"User",},
+    @Operation(summary = "Delete a user",
             responses = {
                     @ApiResponse(responseCode = "200",
                             description = "Returns a boolean",
