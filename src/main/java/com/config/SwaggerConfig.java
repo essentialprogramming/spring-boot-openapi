@@ -90,6 +90,7 @@ public class SwaggerConfig {
 
     }
 
+/**
     @Bean
     public OpenAPI customOpenAPI() {
         return new OpenAPI()
@@ -97,4 +98,5 @@ public class SwaggerConfig {
                 .info(new Info().title("Contact Application API").description(
                         "This is a sample Spring Boot RESTful service using springdoc-openapi and OpenAPI 3."));
     }
+ */
 }
