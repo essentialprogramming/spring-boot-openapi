@@ -1,4 +1,4 @@
-## Sample project integrated with Spring boot and OpenAPI
+## Sample Spring Boot RESTful service using OpenAPI 3
 
 ### Step 1 - Adding OpenAPI to our project
 
