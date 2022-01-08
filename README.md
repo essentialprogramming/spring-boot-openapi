@@ -76,7 +76,7 @@ For that, we need to access `application.properties` and add the following prope
 
 `springdoc.swagger-ui.path=/apidoc`
 
-This will set our Swagger UI URL to: [New UI URL](http://localhost:8080/apidoc)
+This will set our Swagger UI URL to: [http://localhost:8080/apidoc](http://localhost:8080/apidoc)
 
 ### Step 3 - Add annotations to endpoints
 
