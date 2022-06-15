@@ -38,9 +38,9 @@ public class SwaggerConfig {
                         .description("This is a sample Spring Boot RESTful service using OpenAPI")
                         .version("3.0.0")
                         .contact(new Contact()
-                                .name("Avangarde Software")
-                                .url("https://avangarde-software.com/")
-                                .email("markos.kosa@avangarde-software.com")));
+                                .name("Razvan Prichici")
+                                .url("https://github.com/essentialprogramming")
+                                .email("razvanpaulp@gmail.com")));
     }
 
     @Bean
@@ -56,15 +56,15 @@ public class SwaggerConfig {
 
 ### Step 2 - Looking at Swagger
 
-When we start our application, we will have two new endpoints.
+Following URL's are now awailable.
 
-The first represents the OpenAPI specification of our application.
+The first one represents the OpenAPI specification.
 
 [http://localhost:8080/v3/api-docs](http://localhost:8080/v3/api-docs)
 
 ![API Docs](src/main/resources/img/api-docs.png)
 
-The second endpoint represents the Swagger UI, which we can now use to invoke and explore our API.
+The second one represents the Swagger UI, which we can now use to invoke and explore our API.
 
 [Swagger UI](http://localhost:8080/swagger-ui.html)
 
